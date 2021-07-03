@@ -1,0 +1,14 @@
+<?php
+class CRectangulo {   // Clase rectangulo 
+ private $largo; // atributo
+ private $ancho; // atributo
+ // Funcion Constructora 
+ Function CRectangulo () {  
+     this-> largo =0;
+     this-> ancho =0;
+ }
+ public Function get_formulario () {
+     
+ }
+}
+
