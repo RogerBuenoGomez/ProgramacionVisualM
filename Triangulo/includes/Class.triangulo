@@ -1,0 +1,90 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+class CTriangulo {
+
+    private $largo; // atributos
+    private $ancho;
+    private $ladoA;
+    private $ladoB;
+    private $ladoC;
+
+    function CTriangulo() {
+        // es la funcion del constructor 
+        $this->largo = 0; // atributos
+        $this->ancho = 0;
+        $this->ladoA = 0;
+        $this->ladoB = 0;
+        $this->ladoC = 0;
+    }
+
+    public function get_form_transporte() { // metodos 
+        $html = '
+                <form name= "transporte" action="" method="POST">
+                    <table aling = "center" border = "1">
+                        <tr>
+                            <td colspan="2">CALCULAR EL ÁREA DEL TRIANGULO:</td>
+                        </tr>
+                        <tr>
+                            <td>Base</td>
+                            <td><input type="text" name="largo" size=4 ></td>
+                        </tr>
+                        <tr>
+                            <td>Altura</td>
+                            <td><input type="text" name="ancho" size=4 ></td>
+                        </tr>
+                        <tr aling = "center">
+                            <td aling = "center" colspan= "2" ><center><input type="submit" name="guardar" value="Guardar"></center></td>
+                        </tr>
+                    </table>
+                    <br>
+                    </br>
+                     <table aling = "center" border = "1">
+                        <tr>
+                            <td colspan="2">CALCULAR PERÍMETRO DE UN TRIANGULO </td>
+                        </tr>
+                        <tr>
+                            <td>Lado A</td>
+                            <td><input type="text" name="ladoA" size=4 ></td>
+                        </tr>
+                        <tr>
+                            <td>Lado B</td>
+                            <td><input type="text" name="ladoB" size=4 ></td>
+                        </tr>
+                         <tr>
+                            <td>Lado C</td>
+                            <td><input type="text" name="ladoC" size=4 ></td>
+                        </tr>
+                        <tr aling = "center">
+                            <td aling = "center" colspan= "2" ><center><input type="submit" name="boton" value="Guardar"></center></td>
+                        </tr>
+                    </table>
+                    
+                </form>';
+
+
+        return $html;
+    }
+
+    public function area($largo, $ancho) { // metodos
+        $area = $largo * $ancho / 2;
+        return $area;
+    }
+
+    public function perimetro($ladoA, $ladoB, $ladoC) { // metodos
+    $perimetro = $ladoA+ $ladoB+ $ladoC;
+        return $perimetro;
+    }
+
+}
+
+?>
+
+
+
+
