@@ -26,7 +26,7 @@ $num = $_GET['num'];
 if(isset($_GET['num'])){
     $in = 0;
     echo "<h1>Tabla de multiplicar del ".$num." dada por while</h1>";
-    while($in <= 10){
+    while($in <= 12){
         echo $num. " * " .$in. " = ".$num*$in."<br>";  
         $in++;
     }
@@ -47,4 +47,9 @@ if(isset($_GET['num'])){
 }else{
     echo "no existe ninguna variable enviada por GET....!!!";
 }
+
+
+
+
+
 
