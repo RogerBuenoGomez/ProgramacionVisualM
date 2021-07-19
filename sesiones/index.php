@@ -18,4 +18,6 @@ $_SESSION['variable_sesion'] = "soy una variable que persiste en la session inst
 echo "<strong>Variable normal</strong> ".$variable_normal."<br>";
 echo "<strong>Variable sesion</strong> ".$_SESSION['variable_sesion']."<br>";
 
-echo "<a href='pagina1.php'>Ir a pagina 
+
+echo "<a href='pagina1.php'>Ir a pagina 1</a><br>";
+echo "<a href='logout.php'>Cerrar</a>";
