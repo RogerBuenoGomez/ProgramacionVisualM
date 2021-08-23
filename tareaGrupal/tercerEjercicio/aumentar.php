@@ -12,3 +12,6 @@ if (isset($_SESSION ["a"])) {
 unset($_SESSION [""]);
 
 header ("Location: sesion_index.php");
+
+
+
